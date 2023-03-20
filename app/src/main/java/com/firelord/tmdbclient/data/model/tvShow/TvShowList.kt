@@ -1,7 +1,7 @@
-package com.firelord.tmdbclient.data
+package com.firelord.tmdbclient.data.model.tvShow
 
 
-import com.firelord.tmdbclient.data.TvShow
+import com.firelord.tmdbclient.data.model.tvShow.TvShow
 import com.google.gson.annotations.SerializedName
 
 data class TvShowList(

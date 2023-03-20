@@ -1,8 +1,8 @@
-package com.firelord.tmdbclient.api
+package com.firelord.tmdbclient.data.api
 
-import com.firelord.tmdbclient.data.ArtistList
-import com.firelord.tmdbclient.data.MovieList
-import com.firelord.tmdbclient.data.TvShowList
+import com.firelord.tmdbclient.data.model.artist.ArtistList
+import com.firelord.tmdbclient.data.model.movie.MovieList
+import com.firelord.tmdbclient.data.model.tvShow.TvShowList
 import retrofit2.Response
 import retrofit2.http.GET
 import retrofit2.http.Query
