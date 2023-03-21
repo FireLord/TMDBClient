@@ -12,11 +12,10 @@ import com.firelord.tmdbclient.presentation.di.Injector
 import javax.inject.Inject
 
 class MovieActivity : AppCompatActivity() {
-    private lateinit var binding: ActivityMovieBinding
-
     @Inject
     lateinit var factory: MovieViewModelFactory
     private lateinit var movieViewModel: MovieViewModel
+    private lateinit var binding: ActivityMovieBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = DataBindingUtil.setContentView(this, R.layout.activity_movie)
