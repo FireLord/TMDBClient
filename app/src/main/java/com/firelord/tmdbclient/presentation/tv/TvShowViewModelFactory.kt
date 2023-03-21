@@ -5,7 +5,7 @@ import androidx.lifecycle.ViewModelProvider
 import com.firelord.tmdbclient.domain.usecase.GetTvShowsUsecase
 import com.firelord.tmdbclient.domain.usecase.UpdateTvShowsUsecase
 
-class tvShowModelViewModelFactory(
+class TvShowViewModelFactory(
     private val getTvShowsUsecase: GetTvShowsUsecase,
     private val updateTvShowsUsecase: UpdateTvShowsUsecase
 ): ViewModelProvider.Factory {

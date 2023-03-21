@@ -1,4 +1,4 @@
-package com.firelord.tmdbclient.presentation.di
+package com.firelord.tmdbclient.presentation.di.core
 
 import com.firelord.tmdbclient.data.repository.artist.datasource.ArtistCacheDatasource
 import com.firelord.tmdbclient.data.repository.artist.datasourceImpl.ArtistCacheDatasourceImpl

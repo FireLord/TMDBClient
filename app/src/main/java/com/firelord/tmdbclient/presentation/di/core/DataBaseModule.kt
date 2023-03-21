@@ -1,4 +1,4 @@
-package com.firelord.tmdbclient.presentation.di
+package com.firelord.tmdbclient.presentation.di.core
 
 import android.content.Context
 import androidx.room.Room
