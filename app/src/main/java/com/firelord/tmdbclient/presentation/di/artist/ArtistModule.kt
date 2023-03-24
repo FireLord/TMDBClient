@@ -5,10 +5,14 @@ import com.firelord.tmdbclient.domain.usecase.UpdateArtistUsecase
 import com.firelord.tmdbclient.presentation.artist.ArtistViewModelFactory
 import dagger.Module
 import dagger.Provides
+import dagger.hilt.InstallIn
+import dagger.hilt.android.components.ActivityComponent
+import dagger.hilt.android.scopes.ActivityScoped
 
 @Module
+@InstallIn(ActivityComponent::class)
 class ArtistModule {
-    @ArtistScope
+    @ActivityScoped
     @Provides
     fun provideArtistViewModelFactory(
         getArtistsUsecase: GetArtistsUsecase,

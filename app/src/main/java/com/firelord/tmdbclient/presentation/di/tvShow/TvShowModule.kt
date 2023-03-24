@@ -5,10 +5,14 @@ import com.firelord.tmdbclient.domain.usecase.UpdateTvShowsUsecase
 import com.firelord.tmdbclient.presentation.tv.TvShowViewModelFactory
 import dagger.Module
 import dagger.Provides
+import dagger.hilt.InstallIn
+import dagger.hilt.android.components.ActivityComponent
+import dagger.hilt.android.scopes.ActivityScoped
 
 @Module
+@InstallIn(ActivityComponent::class)
 class TvShowModule {
-    @TvShowScope
+    @ActivityScoped
     @Provides
     fun provideTvShowViewModelFactory(
         getTvShowsUsecase: GetTvShowsUsecase,

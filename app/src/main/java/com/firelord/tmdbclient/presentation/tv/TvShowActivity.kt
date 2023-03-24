@@ -13,9 +13,10 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.firelord.tmdbclient.R
 import com.firelord.tmdbclient.databinding.ActivityTvShowBinding
-import com.firelord.tmdbclient.presentation.di.Injector
+import dagger.hilt.android.AndroidEntryPoint
 import javax.inject.Inject
 
+@AndroidEntryPoint
 class TvShowActivity : AppCompatActivity() {
 
     @Inject
@@ -27,8 +28,6 @@ class TvShowActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = DataBindingUtil.setContentView(this, R.layout.activity_tv_show)
-        (application as Injector).createTvShowSubComponent()
-            .inject(this)
 
         tvShowviewModel = ViewModelProvider(this,factory)
             .get(TvShowViewModel::class.java)
